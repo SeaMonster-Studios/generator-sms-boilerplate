@@ -1,0 +1,76 @@
+/*------------------ Main Navigation ------------------*/
+.mainNav {
+    display : none;
+    @include media($desktop) {
+        display: inline-block;
+        width : 100%;
+        ul {
+            width : 100%;
+            list-style: none;
+            li {
+                display: inline-block;
+                &:hover {
+                    a {
+                        color: $action-color;
+                    }
+                }
+                a {
+                    color : $base-font-color;
+                }
+            }// end li
+        }// end ul
+    }// end media($desktop)
+}// end .mainNav
+
+/*------------------ Slidebar Navigation ------------------*/
+.sb-right {
+    background : $light-gray;
+    ul {
+        @include margin(2.5rem 0 0);
+        list-style-type : none;
+        padding         : 0;
+        text-align      : right;
+        li {
+            border-bottom : 1px solid $base-border-color;
+            margin-bottom: 0;
+            &:hover {
+                background : $base-border-color;
+            }
+            a {
+                font-family    : $base-font-family;
+                color          : $dark-gray;
+                line-height    : 56px;
+                padding-right  : rem(13);
+                display        : block;
+                text-transform : uppercase;
+                font-weight    : 600;
+                &:hover {
+                    border-bottom : none;
+                    color : $white;
+                }
+            }// end a
+            ul.sub-menu {
+                margin-top : 0;
+                li {
+                    font-size: 18px;
+                    a {
+                        padding-left : 2em;
+                        &:before {
+                            content : " - ";
+                        }
+                    }
+                    &:hover {
+                        //background : $blue;
+                    }
+                    ul.sub-menu {
+                        li {
+                            a {
+                                padding-left : 3em;
+                            }
+                        }
+                    }
+                }// end ul.sub-menu li
+            }// end ul.sub-menu
+        }// end li
+    }// end ul
+}// end .sb-right

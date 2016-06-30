@@ -1,0 +1,26 @@
+{
+  "name": "templates",
+  "description": "",
+  "main": "_Gruntfile.js",
+  "authors": [
+    "Nick Harberg <nick@seamonsterstudios.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/SeaMonster-Studios/generator-sms-boilerplate",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "owl.carousel": "^2.1.6",
+    "bitters": "^1.3.2",
+    "neat": "^1.8.0",
+    "normalize-css": "^4.1.1",
+    "Slidebars": "^2.0.1"
+  },
+  "version": "5.0.0-beta.6"
+}

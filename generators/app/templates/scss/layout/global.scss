@@ -1,0 +1,87 @@
+.embedHolder {
+    @include margin(null auto);
+    max-width : em(720);
+}
+.embed-container {
+    position       : relative;
+    padding-bottom : 56.25%;
+    padding-top    : 30px;
+    height         : 0;
+    overflow       : hidden;
+    max-width      : 100%;
+    height         : auto;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    width    : 100%;
+    height   : 100%;
+}
+
+img[src$=".gif"] {
+    width : initial;
+}
+
+.cf {
+    @include clearfix();
+}
+
+#goTop {
+   position  : fixed;
+   bottom    : 0.25em;
+   right     : 0.25em;
+   color     :lighten($red, 40);
+   font-size : 2em;
+   z-index   : 9999;
+   &:hover {
+    border :none;
+   }
+}
+
+.caps {
+    text-transform: uppercase;
+}
+.blockDisplay {
+    display: block;
+}
+
+/* Display Classes */
+.hide-small {
+    @media all and (max-width: 600px) {
+        display: none;
+    }
+}
+
+.hide-med {
+    @media all and (min-width: 601px) and (max-width: 1025px) {
+        display: none;
+    }
+}
+
+.hide-large {
+    @media all and (min-width: 1025px) {
+        display: none;
+    }
+}
+.alert, .message, .success {
+    @include padding(1em 2em);
+    @include margin(2em 0);
+    font-family : $sans-serif;
+    font-weight : 600;
+    font-size   : .925em;
+}
+.alert {
+    color            : $alert;
+    background-color : rgba($alert, .10);
+}
+.message {
+    color            : $message;
+    background-color : rgba($message, .10);
+}
+.success {
+    color            : $success;
+    background-color : rgba($success, .10);
+}
+
+

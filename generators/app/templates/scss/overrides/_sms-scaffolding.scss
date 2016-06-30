@@ -1,0 +1,26 @@
+@import "neat-helpers";
+
+$small-mobile : new-breakpoint(max-width 480px 4);
+$mobile       : new-breakpoint(min-width 320px 4);
+$tablet       : new-breakpoint(min-width 600px 12);
+$tablet-big   : new-breakpoint(min-width 750px 12);
+$desktop      : new-breakpoint(min-width 1024px 12);
+$fullscreen   : new-breakpoint(min-width 1440px 12);
+
+#wrapper {
+    //@include outer-container;
+}
+.innerContainer {
+    @include clearfix;
+    padding   : 0 1em;
+    width     : 100%;
+    max-width : 90em;
+    margin    : 0 auto;
+}
+.innerContent {
+    padding   : 0 1em;
+    width     : 100%;
+    max-width : 68em;
+    margin    : 0 auto;
+}
+$mw-content : 68em;

@@ -1,3 +1,5 @@
 node_modules/
 coverage
 bower_components/
+generators/app/templates/bower_components/
+generators/app/templates/npm_modules/

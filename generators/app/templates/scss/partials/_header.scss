@@ -1,0 +1,20 @@
+#sb-site {}
+
+#wrapper {}
+
+header {
+    .headerLogo {
+
+    }
+    .fa-reorder {
+        margin-top : 14px;
+        font-size  : 32px;
+        color      : $action-color;
+        float      : right;
+    }
+    @include media($desktop) {
+        .fa-reorder {
+            display: none;
+        }
+    }
+}

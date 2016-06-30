@@ -1,0 +1,38 @@
+//@import "partials/meta";
+@import "overrides/sms-bundle-overrides";
+@import "bourbon";
+@import "overrides/sms-scaffolding";
+@import "neat";
+@import "bitters/base";
+
+//-------------- SMS Mixins -------------------------------//
+@import "mixins/sms-mixins.scss";
+
+//-------------- Stylesheets for JS plugins ---------------//
+
+//-------------- Default File Overrides -------------------//
+
+@import "overrides/sms-typography";
+@import "overrides/sms-variables";
+
+//-------------- Layout -----------------------------------//
+@import "layout/global";
+@import "layout/default-wordpress";
+
+//-------------- Partials ---------------------------------//
+@import "partials/header";
+@import "partials/footer";
+@import "partials/breadcrumbs";
+@import "partials/navigation";
+@import "partials/pagination";
+@import "partials/sidebar";
+
+//-------------- Templates --------------------------------//
+@import "templates/homepage";
+@import "templates/404";
+@import "templates/contact";
+@import "templates/index";
+@import "templates/single";
+@import "templates/generic-content";
+
+//-------------- Font Awesome -----------------------------//

@@ -1,0 +1,47 @@
+//-------------- DEFAULT WORDPRESS STYLES ----------------//
+.screen-reader-text {
+    position : absolute;
+    left     : -9999px;
+    top      : -9999px;
+}
+.clear {
+    clear : both;
+}
+.group:after {
+    visibility : hidden;
+    display    : block;
+    font-size  : 0;
+    content    : " ";
+    clear      : both;
+    height     : 0;
+}
+* HTML .group, *:first-child + HTML .group {
+    zoom : 1;
+}
+.alignleft {
+    @include margin(0 auto 2em);
+    height : auto;
+    width  : 100% !important;
+    @include media($tablet) {
+        @include margin(0 3em 3em);
+        width : auto !important;
+        float : left;
+        clear : left;
+    }
+}
+.alignright {
+    @include margin(0 auto 2em);
+    height : auto;
+    width  : 100% !important;
+    @include media($tablet) {
+        @include margin(0 3em 3em);
+        width : auto !important;
+        float : right;
+        clear : right;
+    }
+}
+.aligncenter {
+    display : block;
+    margin  : 2em auto;
+    height  : auto;
+}

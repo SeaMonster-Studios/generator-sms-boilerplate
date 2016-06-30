@@ -1,0 +1,37 @@
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth { position:relative; margin-right:4%; float:left; min-height:1px; height:auto!important; height:1px; }
+.one_half, .one_half_last { width:48%; }
+.one_third, .one_third_last { width:30.6666%; }
+.two_third, .two_third_last { width:65.3332%; }
+.one_fourth, .one_fourth_last { width:22%; }
+.two_fourth, .two_fourth_last { width:48%; }
+.three_fourth, .three_fourth_last { width:74%; }
+.one_fifth, .one_fifth_last { width:16.8%; }
+.two_fifth, .two_fifth_last { width:37.6%; }
+.three_fifth, .three_fifth_last { width:58.4%; }
+.four_fifth, .four_fifth_last { width:79.2%; }
+.one_sixth, .one_sixth_last { width:13.3333%; }
+.two_sixth, .two_sixth_last { width:30.6666%; }
+.three_sixth, .three_sixth_last { width:47.9998%; }
+.four_sixth, .four_sixth_last { width:65.3332%; }
+.five_sixth, .five_sixth_last { width:82.6665%; }
+.last { margin-right:0!important; clear:right; }
+.one_half_last, .one_third_last, .one_fourth_last, .one_fifth_last, .one_sixth_last, .two_third_last, .two_fourth_last, .two_fifth_last, .two_sixth_last, .three_fourth_last, .three_fifth_last, .three_sixth_last, .four_fifth_last, .four_sixth_last, .five_sixth_last {float : left;}
+.one_half .one_half { margin-right:8.3333%; width:45.8333%;}
+.one_half .one_third { margin-right:8.3333%; width:27.7778%; }
+.one_half .two_third { margin-right:8.3333%; width:63.8889%; }
+.two_third .one_third { margin-right:6.1224%; width:29.2517%; }
+.two_third .two_third { margin-right:6.1224%; width:64.6258%; }
+.two_third .one_fourth { margin-right:6.1224%; width:20.4082%; }
+
+@media only screen and (max-width: 600px){
+    .one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth, .one_half_last, .one_third_last, .one_fourth_last, .one_sixth_last, .two_third_last, .three_fourth_last, .three_fifth_last, .three_sixth_last, .four_fifth_last, .four_sixth_last, .five_sixth_last {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom:20px;
+    }
+}// end max-width: 600px;
+
+
+
