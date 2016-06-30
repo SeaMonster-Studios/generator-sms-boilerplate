@@ -1,3 +1,4 @@
+<?php include('config.php'); ?>
 <!doctype html>
 <html class="no-js">
     <head>

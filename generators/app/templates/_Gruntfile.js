@@ -88,7 +88,7 @@ module.exports = function(grunt) {
                 options: {
                     livereload : true
                 },
-                files: [ "style.css", "**/*.php", "public/js/script.js" ],
+                files: [ "css/style.css", "**/*.php", "public/js/script.js" ],
             },
         },
 
@@ -114,6 +114,6 @@ module.exports = function(grunt) {
     // Default task(s).
     grunt.registerTask('default',[ 'build', 'watch']);
     grunt.registerTask('build',[ 'sass' ]);
-    grunt.registerTask('bowerBuild',[ 'bower_concat', 'bowercopy' ]);
+    grunt.registerTask('bowerBuild',[ 'bower_concat', 'bowercopy', 'build' ]);
 
 };

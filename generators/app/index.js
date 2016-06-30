@@ -192,6 +192,10 @@ module.exports = generators.Base.extend({
                 this.destinationPath('php/index.php')
             );
             this.fs.copyTpl(
+                this.templatePath('php/inc/config.php'),
+                this.destinationPath('php/inc/config.php')
+            );
+            this.fs.copyTpl(
                 this.templatePath('php/inc/header.php'),
                 this.destinationPath('php/inc/header.php'),
                 {
