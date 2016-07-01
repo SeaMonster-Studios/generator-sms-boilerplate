@@ -1,4 +1,4 @@
-# generator-sms-boilerplate [![NPM version][npm-image]][npm-url] [travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-sms-boilerplate [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > HTML boilerplate for SeaMonster Studios projects
 
 ## Installation
