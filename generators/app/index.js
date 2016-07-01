@@ -80,6 +80,18 @@ module.exports = generators.Base.extend({
                 this.destinationPath('.bowerrc')
             );
             this.fs.copy(
+                this.templatePath('gitignore'),
+                this.destinationPath('.gitignore')
+            );
+            this.fs.copy(
+                this.templatePath('gitattributes'),
+                this.destinationPath('.gitattributes')
+            );
+            this.fs.copy(
+                this.templatePath('editorconfig'),
+                this.destinationPath('.editorconfig')
+            );
+            this.fs.copy(
                 this.templatePath('_Gruntfile.js'),
                 this.destinationPath('Gruntfile.js')
             );
@@ -187,9 +199,30 @@ module.exports = generators.Base.extend({
                     authorName : this.props.authorName
                 }
             );
+            // PHP files/templates
             this.fs.copyTpl(
                 this.templatePath('php/index.php'),
                 this.destinationPath('php/index.php')
+            );
+            this.fs.copyTpl(
+                this.templatePath('php/404.php'),
+                this.destinationPath('php/404.php')
+            );
+            this.fs.copyTpl(
+                this.templatePath('php/page-contact.php'),
+                this.destinationPath('php/page-contact.php')
+            );
+            this.fs.copyTpl(
+                this.templatePath('php/page-home.php'),
+                this.destinationPath('php/page-home.php')
+            );
+            this.fs.copyTpl(
+                this.templatePath('php/single.php'),
+                this.destinationPath('php/single.php')
+            );
+            this.fs.copyTpl(
+                this.templatePath('php/template-generic-content.php'),
+                this.destinationPath('php/template-generic-content.php')
             );
             this.fs.copyTpl(
                 this.templatePath('php/inc/config.php'),
@@ -207,6 +240,18 @@ module.exports = generators.Base.extend({
             this.fs.copyTpl(
                 this.templatePath('php/inc/footer.php'),
                 this.destinationPath('php/inc/footer.php')
+            );
+            this.fs.copyTpl(
+                this.templatePath('php/inc/breadcrumbs.php'),
+                this.destinationPath('php/inc/breadcrumbs.php')
+            );
+            this.fs.copyTpl(
+                this.templatePath('php/inc/form-contact.php'),
+                this.destinationPath('php/inc/form-contact.php')
+            );
+            this.fs.copyTpl(
+                this.templatePath('php/inc/social-media.php'),
+                this.destinationPath('php/inc/social-media.php')
             );
         },
     },

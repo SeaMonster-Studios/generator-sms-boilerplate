@@ -1,7 +1,7 @@
 <?php
 
+$some_relative_path = '{ your url path here }'; // change { your url path here }
 $server_url = $_SERVER["SERVER_NAME"];
-$doc_root = $_SERVER["DOCUMENT_ROOT"];
+$url = $server_url.''. $some_relative_path. '/';
 
-// echo $url = $server_url.'/'. $some_relative_path."<br />";
-// echo $dir = $doc_root.'/'. $some_relative_path;
+define("BASE_URL", "http://$url");
