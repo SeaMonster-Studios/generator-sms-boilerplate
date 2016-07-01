@@ -27,7 +27,7 @@ module.exports = function(grunt) {
                 mainFiles: {
                     'Slidebars' : ['dist/slidebars.js', 'dist/slidebars.css'],
                 },
-                exclude: [  ],
+                exclude: [ 'bitters', 'bourbon', 'neat' ],
             },
         },
 
