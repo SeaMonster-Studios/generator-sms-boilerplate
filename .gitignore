@@ -3,3 +3,5 @@ coverage
 bower_components/
 generators/app/templates/bower_components/
 generators/app/templates/npm_modules/
+generators/app/templates/bower.json
+generators/app/templates/package.json

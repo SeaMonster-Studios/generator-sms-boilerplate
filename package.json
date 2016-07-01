@@ -8,6 +8,9 @@
     "email": "nick@seamonsterstudios.com",
     "url": ""
   },
+  "engines": {
+    "node": "^4.4.5"
+  },
   "files": [
     "generators/app"
   ],
